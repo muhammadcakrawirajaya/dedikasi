@@ -66,7 +66,7 @@ require 'config/database.php';
             </ul>
         </div>
         <div class="button">
-            <a href="#">Sign in→</a>
+            <a href="#">Login→</a>
         </div>
     </div>
 </nav>

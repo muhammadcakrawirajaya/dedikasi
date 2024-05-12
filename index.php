@@ -3,5 +3,9 @@ include 'partials/header.php';
 ?>
 
 <?php
-include './partials/footer.php';
+include 'section/hero.php';
+?>
+
+<?php
+include 'partials/footer.php';
 ?>
