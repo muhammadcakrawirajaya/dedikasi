@@ -15,7 +15,7 @@ require 'config/database.php';
     <link rel="shortcut icon" type="x-icon" href="<?= ROOT_URL ?>assets/icon/tab_icon.png">
 
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>css/styles.css">
+    <link rel="stylesheet" href="<?= ROOT_URL ?>css/new.css">
 
     <!-- BOX ICONS LINK -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
