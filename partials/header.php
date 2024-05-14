@@ -36,7 +36,7 @@ require 'config/database.php';
     <nav>
         <div class="navbar">
             <i class='bx bx-menu' id="menu-icon"></i>
-            <div class="logo"><a href="#"><img src="<?= ROOT_URL ?>assets/icon/nav_logo.png" alt="nav_logo"></a><span>DEDIKASI</span></div>
+            <div class="logo"><a href="#"><img src="<?= ROOT_URL ?>assets/icon/tunas_biru.png" alt="nav_logo"></a><span>DEDIKASI</span></div>
             <div class="nav-links">
                 <div class="sidebar-logo">
                     <span class="logo-name"><span><img src="<?= ROOT_URL ?>assets/icon/tunas_putih.png" alt=""></span>DEDIKASI</span>
@@ -61,7 +61,7 @@ require 'config/database.php';
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Gallery</a></li>
                 <li><a href="#">Article</a></li>
             </ul>
         </div>

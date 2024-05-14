@@ -6,12 +6,12 @@
     outline: none;
 }
 :root {
-    --primary-color: dodgerblue;
-    --secondary-color: #233C63;
-    --tertiary-color: #427474;
-    --fourth-color: #faf2e2;
-    --fifth-color: #efbf2f;
-    --sixth-color: #2b4ca7;
+    --primary-color: #3a7de0;
+    --secondary-color: #0c264e;
+    --tertiary-color: #133c7a;
+    --fourth-color: #00171f;
+    --fifth-color: #feb618;
+    --sixth-color: #007ea7;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -20,7 +20,7 @@ html{
 }
 body{
     min-height: 100vh;
-    background-color: var(--secondary-color);
+    background-color: var(--white-color);
     overflow-x: hidden;
 }
 
@@ -32,7 +32,7 @@ nav{
     width: 100%;
     height: 100%;
     height: 70px;
-    background: whitesmoke;
+    background: var(--white-color);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     z-index: 99;
 }
@@ -59,7 +59,7 @@ nav .navbar{
 }
 .navbar .logo span {
     margin-left: 5px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: xx-large;
 }
@@ -82,7 +82,7 @@ nav .navbar .links li a{
     height: 100%;
     text-decoration: none;
     white-space: nowrap;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 15px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -102,7 +102,7 @@ nav .navbar .links li .arrow{
     line-height: 70px;
     text-align: center;
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 @keyframes slideIn {
@@ -120,7 +120,7 @@ nav .navbar .links li .sub-menu{
     top: 70px;
     left: 0;
     line-height: 40px;
-    background: whitesmoke;
+    background: var(--white-color);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
     display: none;
@@ -141,7 +141,7 @@ nav .navbar .links li:hover .js-sub-menu{
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .navbar .links li .sub-menu a{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 15px;
     font-weight: 500;
 }
@@ -169,7 +169,7 @@ nav .navbar .links li:hover .js-sub-menu{
     font-size: 14px;
     padding: 8px 15px;
     letter-spacing: 0.1em;
-    background: var(--fifth-color);
+    background: var(--sixth-color);
     text-decoration: none;
     text-align: center;
     z-index: 1;
@@ -186,7 +186,7 @@ nav .navbar .links li:hover .js-sub-menu{
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--secondary-color);
+    background: var(--fifth-color);
     color: #000;
     z-index: -1;
     transform-origin: left;
@@ -225,7 +225,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
 @media (max-width:800px){
     #menu-icon{
-        color: var(--secondary-color);
+        color: var(--black-color);
         display: block;
         cursor: pointer;
         transition: all .6s ease;
@@ -247,7 +247,7 @@ nav .navbar .links li:hover .js-sub-menu{
         display: block;
         max-width: 270px;
         width: 100%;
-        background:  var(--secondary-color);
+        background:  var(--primary-color);
         line-height: 40px;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -276,7 +276,7 @@ nav .navbar .links li:hover .js-sub-menu{
         color: var(--white-color);
     }
     nav .navbar .links li .sub-menu{
-        background: var(--secondary-color);
+        background: var(--primary-color);
     }
     .sidebar-logo .logo-name img{
         margin-right: 5px;
@@ -360,7 +360,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
 /* -------------------- START OF HERO -------------------- */
 .hero{
-    background-color: whitesmoke;
+    background-color: var(--white-color);
     position: relative;
 }
 .hero-container{
@@ -471,15 +471,14 @@ nav .navbar .links li:hover .js-sub-menu{
 /* -------------------- END OF HERO -------------------- */
 
 /* -------------------- START OF ABOUT  -------------------- */
-.orange{
-    color: #FF7A01;
+.about-me{
+    background-color: var(--secondary-color);
 }
 .about-me img{
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
 }
-  
 .about-me .container {
     max-width: 1300px;
     margin: 0px auto 0px auto;
@@ -501,7 +500,6 @@ nav .navbar .links li:hover .js-sub-menu{
       padding: 0px 30px 0px 20px;
     }
   }
-  
   .about-me {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -515,8 +513,10 @@ nav .navbar .links li:hover .js-sub-menu{
     }
   }
   .about-me .about-me-container .about-me-title {
+    position: relative;
+    z-index: 5;
     font-size: 55px;
-    color: #87A4B6;
+    color: whitesmoke;
     font-weight: 700;
   }
   @media (max-width: 500px) {
@@ -524,7 +524,6 @@ nav .navbar .links li:hover .js-sub-menu{
       font-size: 30px;
     }
   }
-  
   .about-me-flex-container {
     margin-top: -25px;
     margin-left: 150px;
@@ -560,17 +559,19 @@ nav .navbar .links li:hover .js-sub-menu{
   .about-me-flex-container .about-me-image .back-div {
     position: absolute;
     bottom: 0;
-    z-index: -3;
+    z-index: 1;
     background-color: var(--tertiary-color);
     width: 80%;
     height: 80%;
+    box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
   }
   .about-me-flex-container .about-me-image .black-image {
-    z-index: -2;
+    z-index: 2;
     position: absolute;
     left: 10px;
     bottom: 10px;
     height: 100%;
+    box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
   }
   .about-me-flex-container .about-me-image .black-image img {
     height: 100%;
@@ -581,25 +582,30 @@ nav .navbar .links li:hover .js-sub-menu{
     overflow: hidden;
     position: absolute;
     left: 25%;
-    top: 5%;
-    box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+    top: 22%;
+    box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
     transition: all 0.2s ease-out;
+    border: 3px solid whitesmoke;
+    /* border-radius: 25px; */
+    transform: scale(1.5);
+    z-index: 3;
   }
-  .about-me-flex-container .about-me-image .main-image:hover {
+  /* .about-me-flex-container .about-me-image .main-image:hover {
     transform-origin: top center;
     transform: scale(1.5);
     border-radius: 25px;
-  }
+  } */
   .about-me-flex-container .about-me-image .main-image img {
     transform-origin: center center;
     transform: scale(2);
     -o-object-fit: cover;
        object-fit: cover;
     transition: all 0.2s ease-out;
-  }
-  .about-me-flex-container .about-me-image .main-image img:hover {
     transform: scale(1);
   }
+  /* .about-me-flex-container .about-me-image .main-image img:hover {
+    transform: scale(1);
+  } */
   .about-me-flex-container .about-me-content {
     display: flex;
     flex-direction: column;
@@ -616,7 +622,7 @@ nav .navbar .links li:hover .js-sub-menu{
     max-width: 200px;
   }
   .about-me-flex-container .about-me-content .logo img {
-    filter: drop-shadow(0 0 25px rgb(0, 0, 0));
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
   }
   @media (max-width: 500px) {
     .about-me-flex-container .about-me-content .logo img {
@@ -624,8 +630,9 @@ nav .navbar .links li:hover .js-sub-menu{
     }
   }
   .about-me-flex-container .about-me-content .text {
-    color: #87A4B6;
-    font-weight: 600;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 300;
     font-size: 18px;
   }
   @media (max-width: 500px) {
@@ -673,10 +680,10 @@ nav .navbar .links li:hover .js-sub-menu{
   }
   
   .portfolio-link {
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
   }
   .portfolio-link a{
     text-decoration: none;
@@ -690,11 +697,136 @@ nav .navbar .links li:hover .js-sub-menu{
   }
   /* -------------------- END OF ABOUT -------------------- */
 
+/* START OF PROGRAM */
+/* h1{
+    text-align: center;
+    color: #4181ee;
+} */
+.program{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease;
+}
+.program .subtitle{
+    color: var(--primary-color);
+}
+.program .bold{
+    color: var(--primary-color);
+}
+.program .title-icon{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+.program-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    height: 550px;
+    background: #02b875;
+    padding: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #FFF;
+    margin:20px;
+    /* box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px; */
+    transition: all .6s ease;
+}
+
+.program .satu i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.program .dua i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.program .tiga i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.program .satu{
+    height: 300px;
+}
+.program .dua{
+    height: 400px;
+}
+.card:nth-child(1){
+   background: #02b875;
+}
+.card:nth-child(1):hover{
+   background: green;
+   transform: translateY(-5px);
+}
+.card:nth-child(2){
+   background: #4181ee;
+}
+.card:nth-child(2):hover{
+   transform: translateY(-5px);
+   background: blue;
+}
+.card:last-child{
+   background: goldenrod;
+}
+.card:last-child:hover{
+   background: orange;
+   transform: translateY(-5px);
+}
+.card-title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.card-content{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: center;
+}
+.card-btn{
+    all: unset;
+    display: block;
+    margin-left: auto;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+.card-btn:hover{
+   color:#02b875;
+   background: #FFF;
+}
+.card:nth-child(2) .card-btn:hover{
+   color:#4181ee;
+   background: #FFF;
+}
+.card:last-child .card-btn:hover{
+   color:#673ab7;
+    background: #FFF;
+}
+/* END OF PROGRAM */
+
 /* -------------------- START OF FOOTER -------------------- */
 footer{
     color: #fff;
     /* background-image: linear-gradient(90deg, rgba(39,27,111,1) 0%, rgba(87,25,45,1) 100%); */
-    background-color: #000;
+    background-color: var(--fourth-color);
     /* position: relative; */
     width: 100%;
     height: 100%;

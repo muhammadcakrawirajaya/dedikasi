@@ -18,13 +18,10 @@
                         DEDIKASI berperan sebagai wadah untuk mendorong pemuda-pemudi Indonesia menjadi garda terdepan guna memberikan kebermanfaatan bagi masyarakat.
                     </div></div>
                 </div>
-                <div class="mail-button mail-button2">
-                    <a href="mailto:prajapatismit2906@gmail.com"><img src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/mail.svg" alt="mail"></a>
-                </div>
             </div>
         </div>
+        <br><br>
+        <div class="portfolio-link">
+            <a href="#" target="_blank"><span><img src="<?= ROOT_URL ?>assets/icon/tunas_putih.png" alt=""></span> DEDIKASI</a>
+        </div>
     </section>
-    <br><br>
-    <div class="portfolio-link">
-        <a href="#" target="_blank"><span><img src="<?= ROOT_URL ?>assets/icon/tunas_putih.png" alt=""></span> DEDIKASI</a>
-    </div>

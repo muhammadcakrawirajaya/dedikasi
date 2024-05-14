@@ -47,7 +47,7 @@
             </div>
             <div class="copyright">
                 <hr>
-                <p>© Copyright 2024 Denah Pengabdi Kangsa Pertiwi</p>
+                <p>Copyright ©  2024 <a href="#">Denah Pengabdi Kangsa Pertiwi </a>development by <a href="#">Cakra Wirajaya</a></p>
             </div>
         </footer>
         <script src="<?= ROOT_URL ?>js/main.js"></script>
